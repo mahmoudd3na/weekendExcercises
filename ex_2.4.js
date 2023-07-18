@@ -11,6 +11,6 @@ function unique(arr) {
   for(let i=0;i< arr.length;i++)
     if(arr[i] != common) 
     return arr[i]; 
-
+    
 }
 console.log(unique([ 1, 1, 1, 2, 1, 1 ]) );
