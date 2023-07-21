@@ -8,4 +8,4 @@ function shortestWord(text){
     return shortest; 
 }
 
-console.log(shortestWord("wow what a wonderful world"))
+console.log(shortestWord("wow what a wonderful world")); 
