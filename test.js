@@ -15,33 +15,26 @@ function letterCombinations(digits) {
   letters[8] = ["t", "u", "v"];
   letters[9] = ["w", "x", "y", "z"];
 
-  let digit = "" + digits;
+  let digit =digits+"".split(""); 
   let answer = [""];
   let final = [];
 
-  let count=1; 
-for (let i=0;i<digit.length;i++)
-  count*= letters[digit[i]].length; 
-
-
-
-console.log(count); 
 
   for (let k = 0; k < digit.length; k++) {
     // 35
-    // for (let j = 0; j < answer.length; j++) {
+    for (let j = 0; j < answer.length; j++) {
 
-      for (let i = 0; i < letters[digit[k]].length; i++) {
-    // ["a", "b", "c"];
-        final.push(answer[j] + letters[digit[k]][i]);
-        console.log(final); 
-        answer+= [...final];
-        final = [""];
-      }
-    }
-  }
-  return answer;
-
+  //     for (let i = 0; i < letters[digit[k]].length; i++) {
+  //   // ["a", "b", "c"];
+  //       final.push(answer[j] + letters[digit[k]][i]);
+  //       console.log(final); 
+  //       answer+= [...final];
+  //       final = [""];
+  //     }
+  //   }
+  // }
+  // return answer;
+}
   //   if(string.length==0)
   //   return answer;
   //   else if (string.length==1){
@@ -76,5 +69,5 @@ console.log(count);
   //     }
   //     return answer;
   // }
-}
+
 console.log(letterCombinations(52));

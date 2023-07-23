@@ -14,4 +14,5 @@ function organizeStrings(str1, str2) {
 }
 let a = "xyaabbbccccdefww";
 let b = "xxxxyyyyabklmopq";
-console.log(organizeStrings(a, b));
+console.log(organizeStrings(a, a));
+x
